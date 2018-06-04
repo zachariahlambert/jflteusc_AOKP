@@ -1,0 +1,5 @@
+mkdir .repo/local_manifests
+curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/jflte.xml
+repo sync
+./local_manifests/linker
+./jfltesetup.sh
